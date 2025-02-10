@@ -1,5 +1,8 @@
-****Colab Notebook for 2025 Hackathon**
-**Challenge: Find the Connection
+**Colab Notebook for 2025 Hackathon**
+
+
+**Challenge: Find the Connection**
+
 This repository contains two Colab notebooks designed for the 2025 Hackathon Challenge: Find the Connection.
 
 1. Spatial Graph Construction from IFC Files (0802_Hack.ipynb)
