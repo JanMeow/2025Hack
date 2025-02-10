@@ -22,23 +22,25 @@ Checks for collisions by analyzing geometric intersections within the extracted 
 2. Material & Product Data Extraction using RAG (MaterialProductDataExtraction_RAG.ipynb)
 The second notebook utilizes a Retrieval-Augmented Generation (RAG) approach powered by OpenAI's API to extract and embed textual information from PDF documents.
     
-****Pipeline Overview:
-**
-**Text Extraction from PDFs
+**Pipeline Overview:**
 
-Text data is extracted using PDFMiner.
+#Text Extraction from PDFs
+
+1. Text data is extracted using PDFMiner.
 The current version classifies text into titles or content based on font size.
 Future versions will incorporate a small linear model to create a decision boundary using:
-Font size
+_Font size
 Text length
 Relative font size across the document
-Summarization & Keyword Tagging
+Summarization & Keyword Tagging_
 
-Extracted text is processed using an LLM-based summarization model to generate key tags.
+2. Extracted text is processed using an LLM-based summarization model to generate key tags.
 Embedding & Vector Storage
 
-Keywords are converted into embeddings using an embedding model.
+3. Keywords are converted into embeddings using an embedding model.
 These embeddings are stored in ChromaDB for fast and efficient querying.
-Integration Between Notebooks:
+
+
+**Integration Between Notebooks:**
 The output from the first notebook (spatial graph structure) is passed to the second notebook, where it is processed by the language model to generate embeddings.
 These embeddings are then used to query the vector database (ChromaDB) for retrieval and analysis.
